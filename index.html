@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="./js/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bg-theme">
+            <div class="header">
+                <div class="container">
+                    <div class="logo">
+                        <img src="./img/logo_white-7.png" alt="">
+                    </div>
+                    <div class="sub-menu">
+                        <ul class="menu">
+                            <li><a href="#" class="active">Home<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </li>
+                            <li><a href="#">About us<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Products<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Blog<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Contacts<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Pages<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <div class="cart">
+                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="title-bg">
+                        <img src="./img/home-2-logo-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-bg">
+            <div class="bg-post"></div>
+            <div class="pd">
+                <div class="container">
+                    <div class="col-left">
+                        <h3 class="title">Who we are</h3>
+                        <h2 class="title-ab">About market</h2>
+                        <p class="text-content">
+                            Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec
+                            pulvinar
+                            tellus
+                            egetmagna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis
+                            vitae.
+                        </p>
+                        <div class="signature">
+                            <img src="./img/sign-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./img/about-icon-1.png" alt="">
+                                <div class="content">
+                                    <h3>The best World sorts</h3>
+                                    <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio.
+                                        Donec
+                                        pulvinar tellus eget magna aliquet ultricies.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/about-icon-2.png" alt="">
+                                <div class="content">
+                                    <h3>Many points of sale</h3>
+                                    <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio.
+                                        Donec
+                                        pulvinar tellus eget magna aliquet ultricies.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/about-icon-3.png" alt="">
+                                <div class="content">
+                                    <h3>Professional baristas</h3>
+                                    <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio.
+                                        Donec
+                                        pulvinar tellus eget magna aliquet ultricies.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img src="./img/about-icon-4.png" alt="">
+                                <div class="content">
+                                    <h3>24/7 fast delivery</h3>
+                                    <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio.
+                                        Donec
+                                        pulvinar tellus eget magna aliquet ultricies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="container">
+                <div class="title-product">
+                    <h3>Choose your coffee</h3>
+                    <h2>Recent Products</h2>
+                </div>
+                <div class="animation">
+                    <ul class="product-menu">
+                        <li><a class="list-item product-active" onclick="chuyenDoi('coffee', this)">Coffee</a></li>
+                        <li><a class="list-item" onclick="chuyenDoi('green', this)">Green coffee</a></li>
+                        <li><a class="list-item" onclick="chuyenDoi('roasted', this)">Roasted coffee</a></li>
+                        <li><a class="list-item" onclick="chuyenDoi('itali', this)">Italian</a></li>
+                    </ul>
+                </div>
+                <div id="coffee" class="product-box">
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item1-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                        <div class="sale">
+                            <a href="#">Sale</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <a href="./product-enphiopian.html">
+                            <img src="./img/coffee_item3-300x300.jpg" alt="">
+                        </a>
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">Ephiopian Aroma</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <a href="./green-africana.html">
+                            <img src="./img/coffee_item2-300x300.jpg" alt="">
+                        </a>
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">Green Africana</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item4-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="green" class="product-box">
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item8-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                        <div class="sale">
+                            <a href="#">Sale</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item6-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item5-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item4-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="roasted" class="product-box">
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item7-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                        <div class="sale">
+                            <a href="#">Sale</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item4-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item2-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item3-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="itali" class="product-box">
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item1-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                        <div class="sale">
+                            <a href="#">Sale</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item3-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item2-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="coffee-box">
+                        <img src="./img/coffee_item4-300x300.jpg" alt="">
+                        <div class="product-content">
+                            <h3 class="title-product-box">
+                                <a href="#">MyCoffeeShop Cup</a>
+                            </h3>
+                            <div class="post_content">Duis et aliquam orci. Vivamus augue quam, ...</div>
+                            <h4 class="price">
+                                <span class="price-old">$23.00</span>
+                                <span class="price-new">$19.00</span>
+                            </h4>
+                            <a href="#" class="btn-read"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view">
+                    <a href="" class="btn-view">View all product</a>
+                </div>
+            </div>
+        </div>
+        <div class="sale-delivery">
+            <div class="container">
+                <div class="sale-left">
+                    <h2 class="title-delivery">Sale and delivery points</h2>
+                    <p>
+                        Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec
+                        pulvinartellus eget magna aliquet ultricies. Praesent gravida hendreritex, nec eleifend
+                        semconvallis vitae.
+                    </p>
+                    <div class="where">
+                        <h3>Where buy our coffee:</h3>
+                        <div class="column-inner">
+                            <ul class="nation">
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="column-inner">
+                            <ul class="nation">
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="column-inner">
+                            <ul class="nation">
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Canada
+                                        <span>(23)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">View all points</a>
+                </div>
+                <div class="sale-right">
+                    <img src="./img/map.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="become">
+            <div class="container">
+                <div class="title-become">
+                    <h4>More than</h4>
+                    <h1>5400</h1>
+                    <h3>customers</h3>
+                    <h5>trust us</h5>
+                </div>
+                <div class="dealer">
+                    <h3 class="title-dealer">Become our dealer
+                    </h3>
+                    <p class="text-dealer">Curabitur sollicitudin ultrices tortor, eget pulvinar risus cursus eu.
+                        Vivamus sit amet odio
+                        massa. Vivamus dapibus elementum tellus nec fermentum. Sed blandit condimentum molestie. In hac
+                        habitasse platea dictumst. Etiam fringilla a elit at ornare.
+                    </p>
+                    <a href="#" class="view-all view-dealer">Become a dealer</a>
+                    <a href="#" class="view-all">Contact us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="text-testimonial">
+                <h3>Our clients say</h3>
+                <h2>Testimonials</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="name">Patrick Jame</div>
+                        <div class="sub-header">developer</div>
+                        <p class="content-testimonial">
+                            Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus
+                            sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+                            Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus.
+                        </p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="name">Steven Rashford</div>
+                        <div class="sub-header">developer</div>
+                        <p class="content-testimonial">
+                            Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus
+                            sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+                            Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus.
+                        </p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="name">Patrick Jame</div>
+                        <div class="sub-header">developer</div>
+                        <p class="content-testimonial">
+                            Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus
+                            sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+                            Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus.
+                        </p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="name">Patrick Jame</div>
+                        <div class="sub-header">developer</div>
+                        <p class="content-testimonial">
+                            Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus
+                            sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.
+                            Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus.
+                        </p>
+                        <div class="icon">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="band">
+            <div class="container">
+                <div class="band-inner">
+                    <img src="./img/restaurants.png" alt="">
+                </div>
+                <div class="band-inner">
+                    <img src="./img/vintage.png" alt="">
+                </div>
+                <div class="band-inner">
+                    <img src="./img/cupcake.png" alt="">
+                </div>
+                <div class="band-inner">
+                    <img src="./img/coffe_logo2.png" alt="">
+                </div>
+                <div class="band-inner">
+                    <img src="./img/bakery.png" alt="">
+                </div>
+                <div class="band-inner">
+                    <img src="./img/brandit.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="special">
+            <div class="container">
+                <div class="special-left">
+                    <div class="box-special">
+                        <div class="discount-inner">
+                            <h5>Special offer</h5>
+                            <h2>Get your discount</h2>
+                        </div>
+                        <div class="cart-special">
+                            <img src="./img/card.png" alt="">
+                        </div>
+                        <div class="content-special">
+                            <p>
+                                Morbi malesuada dui in iaculis lacinia. Duis laoreet ut liberonec tincidunt. Maecenas a
+                                eros finibus, condimentum tortoreget, auctor nunc. Aenean a efficitur leo.
+                            </p>
+                        </div>
+                        <div class="btn-get">
+                            <a href="#">Get now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-right">
+                    <img src="./img/coffe_back.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="recent-post">
+            <div class="container">
+                <div class="text-testimonial">
+                    <h3 class="color-text">Our blog</h3>
+                    <h2 class="color-black">Recent posts</h2>
+                </div>
+                <div class="post-full">
+                    <div class="blog-box">
+                        <a href="#" class="blog-img">
+                            <img src="./img/blog1-770x570.jpg" alt="">
+                        </a>
+                        <div class="body-blog">
+                            <h3>
+                                <a href="#">History of coffee</a>
+                            </h3>
+                            <p>
+                                Integer maximus accumsan nunc, sit amet tempor lectus facilisis eu. Cras vel elit felis.
+                                Vestibulum convallis ipsum id aliquam varius. Etiam nec laoreet .
+                            </p>
+                            <a class="date">
+                                <span class="day">25</span>
+                                <span class="date-my">September <br> 2017</span>
+                                <ul>
+                                    <li class="icon-fav">
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        1303
+                                    </li>
+                                    <li class="icon-fav">
+                                        <span><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <a href="#" class="blog-img">
+                            <img src="./img/blog2-770x570.jpg" alt="">
+                        </a>
+                        <div class="body-blog">
+                            <h3>
+                                <a href="#">History of coffee</a>
+                            </h3>
+                            <p>
+                                Integer maximus accumsan nunc, sit amet tempor lectus facilisis eu. Cras vel elit felis.
+                                Vestibulum convallis ipsum id aliquam varius. Etiam nec laoreet .
+                            </p>
+                            <a class="date">
+                                <span class="day">25</span>
+                                <span class="date-my">September <br> 2017</span>
+                                <ul>
+                                    <li class="icon-fav">
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        1303
+                                    </li>
+                                    <li class="icon-fav">
+                                        <span><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-box">
+                        <a href="#" class="blog-img">
+                            <img src="./img/blog3-770x570.jpg" alt="">
+                        </a>
+                        <div class="body-blog">
+                            <h3>
+                                <a href="#">History of coffee</a>
+                            </h3>
+                            <p>
+                                Integer maximus accumsan nunc, sit amet tempor lectus facilisis eu. Cras vel elit felis.
+                                Vestibulum convallis ipsum id aliquam varius. Etiam nec laoreet .
+                            </p>
+                            <a class="date">
+                                <span class="day">25</span>
+                                <span class="date-my">September <br> 2017</span>
+                                <ul>
+                                    <li class="icon-fav">
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        1303
+                                    </li>
+                                    <li class="icon-fav">
+                                        <span><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                                        0
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-1">
+                    <img src="./img/logo_white-7.png" alt="">
+                    <p>
+                        Pellentesque congue non augue vitae pellentesque. Morbi sollicitudin eleifend rhoncus. Mauris
+                        vel nisl a massa viverra sollicitudin semper a diam.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        <a href="#" class="btn-footer">Purchase Theme</a>
+                    </p>
+                </div>
+                <div class="footer-1">
+                    <h4>EXPLORE</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1">
+                    <h4>EXPLORE</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            44 Danwers, NY City, USA, 70-102
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            +10800-33-800; +10500-55-900
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            mycoffee@mycoffeeshop.us
+                        </li>
+                        <li>
+                            <span><i class="fa fa-skype" aria-hidden="true"></i></span>
+                            mycoffeeshop
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
